@@ -61,7 +61,7 @@ function Rewards() {
             console.log('rrr', processedData)
             setRewardsData(processedData);
         } catch (error) {
-            console.log('ee', error)
+            console.log('error: ', error)
         }
     }
 
@@ -74,41 +74,60 @@ function Rewards() {
     useEffect(() => {
         getPurchaseData()
     }, [])
-    return <div>
-        <div>User Monthly purchase data</div>
-
-        <table>
-            <tr>
-                <th>Name</th>
-                <th>Month</th>
-                <th>Reward</th>
-            </tr>
-            {rewardsData.monthlyUserRewards?.sort(sortByName)
-                .map((val, key) => {
-                    return (
-                        <tr key={key}>
-                            <td>{val.customer_name}</td>
-                            <td>{val.month}</td>
-                            <td>{val.reward}</td>
-                        </tr>
-                    )
-                })}
-        </table>
-        <div>User Total purchase data</div>
-        <table>
-            <tr>
-                <th>Name</th>
-                <th>Reward</th>
-            </tr>
-            {rewardsData.totalUserRewards?.map((val, key) => {
-                return (
-                    <tr key={key}>
-                        <td>{val.customer_name}</td>
-                        <td>{val.reward}</td>
+    return <div className="rewards-container">
+        <div className="floatLeft">
+            <table>
+                <thead>
+                    <tr>
+                        <th colSpan={3}>User Monthly rewards data</th>
                     </tr>
-                )
-            })}
-        </table>
+                </thead>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Month</th>
+                        <th>Reward</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {rewardsData.monthlyUserRewards?.sort(sortByName)
+                        .map((val, key) => {
+                            return (
+                                <tr key={key}>
+                                    <td>{val.customer_name}</td>
+                                    <td>{val.month}</td>
+                                    <td>{val.reward}</td>
+                                </tr>
+                            )
+                        })}
+                </tbody>
+            </table>
+        </div>
+        <div className="floatLeft">
+            <table>
+                <thead>
+                    <tr>
+                        <th colSpan={2}>User total purchase data</th>
+                    </tr>
+                </thead>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Reward</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {rewardsData.totalUserRewards?.map((val, key) => {
+                        return (
+                            <tr key={key}>
+                                <td>{val.customer_name}</td>
+                                <td>{val.reward}</td>
+                            </tr>
+                        )
+                    })}
+                </tbody>
+            </table>
+        </div>
     </div>
 }
 

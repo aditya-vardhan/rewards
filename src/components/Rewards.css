@@ -1,14 +1,16 @@
+.rewards-container { overflow: hidden; }
+
+.floatLeft { width: 50%; float: left; }
+.floatRight {width: 50%; float: left; }
+
 table {
-    font-family: arial, sans-serif;
-    border-collapse: collapse;
-  }
-  
-  td, th {
-    border: 1px solid #dddddd;
-    text-align: left;
-    padding: 8px;
-  }
-  
-  tr:nth-child(even) {
-    background-color: #dddddd;
-  }
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+}
+
+td,
+th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+} 
