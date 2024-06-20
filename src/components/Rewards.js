@@ -12,7 +12,6 @@ function Rewards() {
 
             const today = moment();
             const purchaseDataResponse = await PurchaseDataService('mock')
-            console.log(purchaseDataResponse)
 
             const processedData = purchaseDataResponse.result.data.reduce((acm, record) => {
                 // no need to process record if the amount is less than 100
@@ -38,7 +37,7 @@ function Rewards() {
                     const userMonthlyReward = {
                         customer_name: record.customer_name,
                         month: purchaseMonth,
-                        
+
                         reward: reward
                     }
                     acm.monthlyUserRewards.push(userMonthlyReward)
@@ -59,7 +58,6 @@ function Rewards() {
 
                 return acm;
             }, { totalUserRewards: [], monthlyUserRewards: [] })
-            console.log('rrr', processedData)
             setRewardsData(processedData);
         } catch (error) {
             console.log('error: ', error)
@@ -77,12 +75,8 @@ function Rewards() {
     }, [])
     return <div className="rewards-container">
         <div className="floatLeft">
+            <div className="table-header">User Monthly rewards data</div>
             <table>
-                <thead>
-                    <tr>
-                        <th colSpan={3}>User Monthly rewards data</th>
-                    </tr>
-                </thead>
                 <thead>
                     <tr>
                         <th>Name</th>
@@ -105,12 +99,8 @@ function Rewards() {
             </table>
         </div>
         <div className="floatLeft">
+            <div className="table-header">User total purchase data</div>
             <table>
-                <thead>
-                    <tr>
-                        <th colSpan={2}>User total purchase data</th>
-                    </tr>
-                </thead>
                 <thead>
                     <tr>
                         <th>Name</th>
