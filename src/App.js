@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import RewardsContainer from './containers/RewardsContainer';
 
 function App() {

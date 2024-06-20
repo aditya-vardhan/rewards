@@ -29,7 +29,7 @@ function Rewards() {
     }, [])
     return <>
         <div className="floatLeft">
-            <div className="table-header">User Monthly rewards data</div>
+            <div className="table-header monthly-rewards">User Monthly rewards data</div>
             <table>
                 <thead>
                     <tr>
@@ -53,7 +53,7 @@ function Rewards() {
             </table>
         </div>
         <div className="floatLeft">
-            <div className="table-header">User total purchase data</div>
+            <div className="table-header total-rewards">User total purchase rewards data</div>
             <table>
                 <thead>
                     <tr>
