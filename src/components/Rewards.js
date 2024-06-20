@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
-import moment from 'moment';
 import PurchaseDataService from "../services/PurchaseDataService";
 import './Rewards.css';
 import { generateRewardsData } from "./RewardUtils";
+import logger from "../logger";
 
 function Rewards() {
 
@@ -14,7 +14,7 @@ function Rewards() {
             const rewardsInfo = generateRewardsData(purchaseDataResponse.result.data);
             setRewardsData(rewardsInfo);
         } catch (error) {
-            console.log('error: ', error)
+            logger.error(error)
         }
     }
 
