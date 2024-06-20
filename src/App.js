@@ -1,11 +1,10 @@
 import logo from './logo.svg';
-// import './App.css';
-import Rewards from './components/Rewards';
+import RewardsContainer from './containers/RewardsContainer';
 
 function App() {
   return (
     <div className="App">
-      <Rewards />
+      <RewardsContainer />
     </div>
   );
 }

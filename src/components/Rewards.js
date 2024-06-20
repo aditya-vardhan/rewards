@@ -38,6 +38,7 @@ function Rewards() {
                     const userMonthlyReward = {
                         customer_name: record.customer_name,
                         month: purchaseMonth,
+                        
                         reward: reward
                     }
                     acm.monthlyUserRewards.push(userMonthlyReward)
