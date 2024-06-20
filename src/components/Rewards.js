@@ -27,7 +27,7 @@ function Rewards() {
     useEffect(() => {
         getPurchaseData()
     }, [])
-    return <div className="rewards-container">
+    return <>
         <div className="floatLeft">
             <div className="table-header">User Monthly rewards data</div>
             <table>
@@ -73,7 +73,7 @@ function Rewards() {
                 </tbody>
             </table>
         </div>
-    </div>
+    </>
 }
 
 export default Rewards;
