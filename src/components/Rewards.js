@@ -14,7 +14,7 @@ function Rewards() {
             const rewardsInfo = generateRewardsData(purchaseDataResponse.result.data);
             setRewardsData(rewardsInfo);
         } catch (error) {
-            logger.error(error)
+            logger.error(error);
         }
     }
 
