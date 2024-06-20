@@ -40,12 +40,12 @@ function Rewards() {
                 </thead>
                 <tbody>
                     {rewardsData.monthlyUserRewards?.sort(sortByName)
-                        .map((val, key) => {
+                        .map((row, key) => {
                             return (
                                 <tr key={key}>
-                                    <td>{val.customer_name}</td>
-                                    <td>{val.month}</td>
-                                    <td>{val.reward}</td>
+                                    <td>{row.customer_name}</td>
+                                    <td>{row.month}</td>
+                                    <td>{row.reward}</td>
                                 </tr>
                             )
                         })}
@@ -62,11 +62,11 @@ function Rewards() {
                     </tr>
                 </thead>
                 <tbody>
-                    {rewardsData.totalUserRewards?.map((val, key) => {
+                    {rewardsData.totalUserRewards?.map((row, key) => {
                         return (
                             <tr key={key}>
-                                <td>{val.customer_name}</td>
-                                <td>{val.reward}</td>
+                                <td>{row.customer_name}</td>
+                                <td>{row.reward}</td>
                             </tr>
                         )
                     })}

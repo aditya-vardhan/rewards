@@ -3,7 +3,7 @@ import logger from "../logger";
 
 export const generateRewardsData = (purchaseData) => {
     const today = moment();
-    return purchaseData.reduce((acm, txn) => {
+    const rewardsData = purchaseData.reduce((acm, txn) => {
         // no need to process txn if the amount is less than 100
         if (txn.price < 100) {
             return acm
@@ -46,8 +46,9 @@ export const generateRewardsData = (purchaseData) => {
             acm.totalUserRewards.push(userTotalReward)
         }
 
-        logger.log
 
         return acm;
     }, { totalUserRewards: [], monthlyUserRewards: [] })
+    logger.log('Generated rewards data: ', rewardsData);
+    return rewardsData;
 }
