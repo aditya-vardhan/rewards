@@ -3,676 +3,676 @@
     "result": {
         "data": [
             {
-                "transaction_id": "TXN001",
-                "customer_name": "John Doe",
-                "purchased_product": "Laptop",
-                "amount_spent": 1200,
-                "purchased_date": "2024-03-15"
-            },
-            {
-                "transaction_id": "TXN002",
-                "customer_name": "Jane Smith",
-                "purchased_product": "Smartphone",
-                "amount_spent": 800,
-                "purchased_date": "2024-03-18"
-            },
-            {
-                "transaction_id": "TXN003",
-                "customer_name": "John Doe",
-                "purchased_product": "Headphones",
-                "amount_spent": 150,
-                "purchased_date": "2024-03-25"
-            },
-            {
-                "transaction_id": "TXN004",
-                "customer_name": "Emily Johnson",
-                "purchased_product": "Tablet",
-                "amount_spent": 300,
-                "purchased_date": "2024-04-05"
-            },
-            {
-                "transaction_id": "TXN005",
+                "transaction_id": "TXN085",
                 "customer_name": "Michael Brown",
-                "purchased_product": "Smartwatch",
-                "amount_spent": 200,
-                "purchased_date": "2024-04-10"
+                "purchased_product": "Slippers",
+                "price": 10,
+                "purchased_date": "2024-03-01"
             },
             {
-                "transaction_id": "TXN006",
-                "customer_name": "Jane Smith",
-                "purchased_product": "Laptop",
-                "amount_spent": 1100,
-                "purchased_date": "2024-04-22"
-            },
-            {
-                "transaction_id": "TXN007",
-                "customer_name": "Emily Johnson",
-                "purchased_product": "Monitor",
-                "amount_spent": 250,
-                "purchased_date": "2024-05-03"
-            },
-            {
-                "transaction_id": "TXN008",
-                "customer_name": "Michael Brown",
-                "purchased_product": "Keyboard",
-                "amount_spent": 120,
-                "purchased_date": "2024-05-11"
-            },
-            {
-                "transaction_id": "TXN009",
+                "transaction_id": "TXN048",
                 "customer_name": "John Doe",
-                "purchased_product": "Mouse",
-                "amount_spent": 130,
-                "purchased_date": "2024-05-20"
+                "purchased_product": "Coffee Maker",
+                "price": 120,
+                "purchased_date": "2024-03-03"
             },
             {
-                "transaction_id": "TXN010",
+                "transaction_id": "TXN086",
                 "customer_name": "Emily Johnson",
-                "purchased_product": "Laptop",
-                "amount_spent": 900,
-                "purchased_date": "2024-06-01"
-            },
-            {
-                "transaction_id": "TXN011",
-                "customer_name": "Michael Brown",
-                "purchased_product": "Smartphone",
-                "amount_spent": 750,
-                "purchased_date": "2024-06-07"
-            },
-            {
-                "transaction_id": "TXN012",
-                "customer_name": "Jane Smith",
-                "purchased_product": "Headphones",
-                "amount_spent": 150,
-                "purchased_date": "2024-06-15"
+                "purchased_product": "Toothbrush",
+                "price": 5,
+                "purchased_date": "2024-03-04"
             },
             {
                 "transaction_id": "TXN013",
                 "customer_name": "Michael Brown",
                 "purchased_product": "Charger",
-                "amount_spent": 50,
+                "price": 50,
                 "purchased_date": "2024-03-05"
+            },
+            {
+                "transaction_id": "TXN087",
+                "customer_name": "Jane Smith",
+                "purchased_product": "Toothpaste",
+                "price": 3,
+                "purchased_date": "2024-03-06"
+            },
+            {
+                "transaction_id": "TXN049",
+                "customer_name": "Michael Brown",
+                "purchased_product": "Toaster",
+                "price": 50,
+                "purchased_date": "2024-03-07"
+            },
+            {
+                "transaction_id": "TXN088",
+                "customer_name": "John Doe",
+                "purchased_product": "Shampoo",
+                "price": 7,
+                "purchased_date": "2024-03-08"
             },
             {
                 "transaction_id": "TXN014",
                 "customer_name": "Emily Johnson",
                 "purchased_product": "USB Cable",
-                "amount_spent": 20,
+                "price": 20,
+                "purchased_date": "2024-03-10"
+            },
+            {
+                "transaction_id": "TXN089",
+                "customer_name": "Michael Brown",
+                "purchased_product": "Conditioner",
+                "price": 8,
                 "purchased_date": "2024-03-10"
             },
             {
                 "transaction_id": "TXN015",
                 "customer_name": "Jane Smith",
                 "purchased_product": "Screen Protector",
-                "amount_spent": 15,
+                "price": 15,
                 "purchased_date": "2024-03-12"
-            },
-            {
-                "transaction_id": "TXN016",
-                "customer_name": "John Doe",
-                "purchased_product": "Phone Case",
-                "amount_spent": 30,
-                "purchased_date": "2024-03-22"
-            },
-            {
-                "transaction_id": "TXN017",
-                "customer_name": "Michael Brown",
-                "purchased_product": "Stylus Pen",
-                "amount_spent": 45,
-                "purchased_date": "2024-04-02"
-            },
-            {
-                "transaction_id": "TXN018",
-                "customer_name": "Emily Johnson",
-                "purchased_product": "External Hard Drive",
-                "amount_spent": 95,
-                "purchased_date": "2024-04-08"
-            },
-            {
-                "transaction_id": "TXN019",
-                "customer_name": "Jane Smith",
-                "purchased_product": "Portable Speaker",
-                "amount_spent": 70,
-                "purchased_date": "2024-04-15"
-            },
-            {
-                "transaction_id": "TXN020",
-                "customer_name": "John Doe",
-                "purchased_product": "Webcam",
-                "amount_spent": 60,
-                "purchased_date": "2024-04-19"
-            },
-            {
-                "transaction_id": "TXN021",
-                "customer_name": "Michael Brown",
-                "purchased_product": "Wireless Charger",
-                "amount_spent": 40,
-                "purchased_date": "2024-04-25"
-            },
-            {
-                "transaction_id": "TXN022",
-                "customer_name": "Emily Johnson",
-                "purchased_product": "Memory Card",
-                "amount_spent": 80,
-                "purchased_date": "2024-04-29"
-            },
-            {
-                "transaction_id": "TXN023",
-                "customer_name": "Jane Smith",
-                "purchased_product": "Laptop Bag",
-                "amount_spent": 85,
-                "purchased_date": "2024-05-04"
-            },
-            {
-                "transaction_id": "TXN024",
-                "customer_name": "John Doe",
-                "purchased_product": "Bluetooth Adapter",
-                "amount_spent": 25,
-                "purchased_date": "2024-05-08"
-            },
-            {
-                "transaction_id": "TXN025",
-                "customer_name": "Michael Brown",
-                "purchased_product": "Microphone",
-                "amount_spent": 70,
-                "purchased_date": "2024-05-12"
-            },
-            {
-                "transaction_id": "TXN026",
-                "customer_name": "Emily Johnson",
-                "purchased_product": "Camera Lens",
-                "amount_spent": 150,
-                "purchased_date": "2024-05-17"
-            },
-            {
-                "transaction_id": "TXN027",
-                "customer_name": "Jane Smith",
-                "purchased_product": "Printer",
-                "amount_spent": 130,
-                "purchased_date": "2024-05-23"
-            },
-            {
-                "transaction_id": "TXN028",
-                "customer_name": "John Doe",
-                "purchased_product": "Scanner",
-                "amount_spent": 100,
-                "purchased_date": "2024-05-27"
-            },
-            {
-                "transaction_id": "TXN029",
-                "customer_name": "Michael Brown",
-                "purchased_product": "Router",
-                "amount_spent": 120,
-                "purchased_date": "2024-06-05"
-            },
-            {
-                "transaction_id": "TXN030",
-                "customer_name": "Emily Johnson",
-                "purchased_product": "Desktop PC",
-                "amount_spent": 900,
-                "purchased_date": "2024-06-10"
-            },
-            {
-                "transaction_id": "TXN031",
-                "customer_name": "Jane Smith",
-                "purchased_product": "Gaming Console",
-                "amount_spent": 400,
-                "purchased_date": "2024-06-14"
-            },
-            {
-                "transaction_id": "TXN032",
-                "customer_name": "John Doe",
-                "purchased_product": "VR Headset",
-                "amount_spent": 300,
-                "purchased_date": "2024-06-19"
-            },
-            {
-                "transaction_id": "TXN033",
-                "customer_name": "Michael Brown",
-                "purchased_product": "Fitness Tracker",
-                "amount_spent": 150,
-                "purchased_date": "2024-06-20"
-            },
-            {
-                "transaction_id": "TXN034",
-                "customer_name": "Emily Johnson",
-                "purchased_product": "Drone",
-                "amount_spent": 500,
-                "purchased_date": "2024-06-22"
-            },
-            {
-                "transaction_id": "TXN035",
-                "customer_name": "Jane Smith",
-                "purchased_product": "Smart Thermostat",
-                "amount_spent": 200,
-                "purchased_date": "2024-06-25"
-            },
-            {
-                "transaction_id": "TXN036",
-                "customer_name": "John Doe",
-                "purchased_product": "Electric Scooter",
-                "amount_spent": 400,
-                "purchased_date": "2024-06-27"
-            },
-            {
-                "transaction_id": "TXN037",
-                "customer_name": "Michael Brown",
-                "purchased_product": "Wireless Earbuds",
-                "amount_spent": 80,
-                "purchased_date": "2024-06-28"
-            },
-            {
-                "transaction_id": "TXN038",
-                "customer_name": "Emily Johnson",
-                "purchased_product": "Smart Light Bulb",
-                "amount_spent": 50,
-                "purchased_date": "2024-06-30"
-            },
-            {
-                "transaction_id": "TXN039",
-                "customer_name": "Jane Smith",
-                "purchased_product": "Smart Lock",
-                "amount_spent": 150,
-                "purchased_date": "2024-06-11"
-            },
-            {
-                "transaction_id": "TXN040",
-                "customer_name": "John Doe",
-                "purchased_product": "Smart Doorbell",
-                "amount_spent": 200,
-                "purchased_date": "2024-06-13"
-            },
-            {
-                "transaction_id": "TXN041",
-                "customer_name": "Michael Brown",
-                "purchased_product": "Action Camera",
-                "amount_spent": 250,
-                "purchased_date": "2024-06-15"
-            },
-            {
-                "transaction_id": "TXN042",
-                "customer_name": "Emily Johnson",
-                "purchased_product": "Electric Toothbrush",
-                "amount_spent": 100,
-                "purchased_date": "2024-06-18"
-            },
-            {
-                "transaction_id": "TXN043",
-                "customer_name": "Jane Smith",
-                "purchased_product": "Hair Dryer",
-                "amount_spent": 50,
-                "purchased_date": "2024-06-21"
-            },
-            {
-                "transaction_id": "TXN044",
-                "customer_name": "John Doe",
-                "purchased_product": "Blender",
-                "amount_spent": 60,
-                "purchased_date": "2024-06-24"
-            },
-            {
-                "transaction_id": "TXN045",
-                "customer_name": "Michael Brown",
-                "purchased_product": "Vacuum Cleaner",
-                "amount_spent": 300,
-                "purchased_date": "2024-06-26"
-            },
-            {
-                "transaction_id": "TXN046",
-                "customer_name": "Emily Johnson",
-                "purchased_product": "Air Purifier",
-                "amount_spent": 200,
-                "purchased_date": "2024-06-29"
-            },
-            {
-                "transaction_id": "TXN047",
-                "customer_name": "Jane Smith",
-                "purchased_product": "Water Filter",
-                "amount_spent": 100,
-                "purchased_date": "2024-06-30"
-            },
-            {
-                "transaction_id": "TXN048",
-                "customer_name": "John Doe",
-                "purchased_product": "Coffee Maker",
-                "amount_spent": 120,
-                "purchased_date": "2024-03-03"
-            },
-            {
-                "transaction_id": "TXN049",
-                "customer_name": "Michael Brown",
-                "purchased_product": "Toaster",
-                "amount_spent": 50,
-                "purchased_date": "2024-03-07"
             },
             {
                 "transaction_id": "TXN050",
                 "customer_name": "Emily Johnson",
                 "purchased_product": "Microwave",
-                "amount_spent": 150,
+                "price": 150,
                 "purchased_date": "2024-03-12"
-            },
-            {
-                "transaction_id": "TXN051",
-                "customer_name": "Jane Smith",
-                "purchased_product": "Oven",
-                "amount_spent": 400,
-                "purchased_date": "2024-03-17"
-            },
-            {
-                "transaction_id": "TXN052",
-                "customer_name": "John Doe",
-                "purchased_product": "Refrigerator",
-                "amount_spent": 1200,
-                "purchased_date": "2024-03-20"
-            },
-            {
-                "transaction_id": "TXN053",
-                "customer_name": "Michael Brown",
-                "purchased_product": "Washing Machine",
-                "amount_spent": 800,
-                "purchased_date": "2024-03-24"
-            },
-            {
-                "transaction_id": "TXN054",
-                "customer_name": "Emily Johnson",
-                "purchased_product": "Dryer",
-                "amount_spent": 700,
-                "purchased_date": "2024-03-27"
-            },
-            {
-                "transaction_id": "TXN055",
-                "customer_name": "Jane Smith",
-                "purchased_product": "Dishwasher",
-                "amount_spent": 600,
-                "purchased_date": "2024-04-01"
-            },
-            {
-                "transaction_id": "TXN056",
-                "customer_name": "John Doe",
-                "purchased_product": "Air Conditioner",
-                "amount_spent": 500,
-                "purchased_date": "2024-04-06"
-            },
-            {
-                "transaction_id": "TXN057",
-                "customer_name": "Michael Brown",
-                "purchased_product": "Heater",
-                "amount_spent": 200,
-                "purchased_date": "2024-04-11"
-            },
-            {
-                "transaction_id": "TXN058",
-                "customer_name": "Emily Johnson",
-                "purchased_product": "Fan",
-                "amount_spent": 100,
-                "purchased_date": "2024-04-16"
-            },
-            {
-                "transaction_id": "TXN059",
-                "customer_name": "Jane Smith",
-                "purchased_product": "Water Heater",
-                "amount_spent": 300,
-                "purchased_date": "2024-04-20"
-            },
-            {
-                "transaction_id": "TXN060",
-                "customer_name": "John Doe",
-                "purchased_product": "Iron",
-                "amount_spent": 50,
-                "purchased_date": "2024-04-24"
-            },
-            {
-                "transaction_id": "TXN061",
-                "customer_name": "Michael Brown",
-                "purchased_product": "Vacuum Cleaner",
-                "amount_spent": 250,
-                "purchased_date": "2024-04-28"
-            },
-            {
-                "transaction_id": "TXN062",
-                "customer_name": "Emily Johnson",
-                "purchased_product": "Mop",
-                "amount_spent": 30,
-                "purchased_date": "2024-05-01"
-            },
-            {
-                "transaction_id": "TXN063",
-                "customer_name": "Jane Smith",
-                "purchased_product": "Broom",
-                "amount_spent": 10,
-                "purchased_date": "2024-05-05"
-            },
-            {
-                "transaction_id": "TXN064",
-                "customer_name": "John Doe",
-                "purchased_product": "Dustpan",
-                "amount_spent": 5,
-                "purchased_date": "2024-05-07"
-            },
-            {
-                "transaction_id": "TXN065",
-                "customer_name": "Michael Brown",
-                "purchased_product": "Rug",
-                "amount_spent": 100,
-                "purchased_date": "2024-05-11"
-            },
-            {
-                "transaction_id": "TXN066",
-                "customer_name": "Emily Johnson",
-                "purchased_product": "Curtains",
-                "amount_spent": 150,
-                "purchased_date": "2024-05-15"
-            },
-            {
-                "transaction_id": "TXN067",
-                "customer_name": "Jane Smith",
-                "purchased_product": "Blinds",
-                "amount_spent": 120,
-                "purchased_date": "2024-05-18"
-            },
-            {
-                "transaction_id": "TXN068",
-                "customer_name": "John Doe",
-                "purchased_product": "Bed",
-                "amount_spent": 900,
-                "purchased_date": "2024-05-22"
-            },
-            {
-                "transaction_id": "TXN069",
-                "customer_name": "Michael Brown",
-                "purchased_product": "Sofa",
-                "amount_spent": 700,
-                "purchased_date": "2024-05-26"
-            },
-            {
-                "transaction_id": "TXN074",
-                "customer_name": "Emily Johnson",
-                "purchased_product": "Desk",
-                "amount_spent": 300,
-                "purchased_date": "2024-06-06"
-            },
-            {
-                "transaction_id": "TXN075",
-                "customer_name": "Jane Smith",
-                "purchased_product": "Wardrobe",
-                "amount_spent": 400,
-                "purchased_date": "2024-06-08"
-            },
-            {
-                "transaction_id": "TXN076",
-                "customer_name": "John Doe",
-                "purchased_product": "Mattress",
-                "amount_spent": 600,
-                "purchased_date": "2024-06-11"
-            },
-            {
-                "transaction_id": "TXN077",
-                "customer_name": "Michael Brown",
-                "purchased_product": "Pillow",
-                "amount_spent": 30,
-                "purchased_date": "2024-06-13"
-            },
-            {
-                "transaction_id": "TXN078",
-                "customer_name": "Emily Johnson",
-                "purchased_product": "Blanket",
-                "amount_spent": 50,
-                "purchased_date": "2024-06-16"
-            },
-            {
-                "transaction_id": "TXN079",
-                "customer_name": "Jane Smith",
-                "purchased_product": "Duvet",
-                "amount_spent": 100,
-                "purchased_date": "2024-06-18"
-            },
-            {
-                "transaction_id": "TXN080",
-                "customer_name": "John Doe",
-                "purchased_product": "Quilt",
-                "amount_spent": 70,
-                "purchased_date": "2024-06-20"
-            },
-            {
-                "transaction_id": "TXN081",
-                "customer_name": "Michael Brown",
-                "purchased_product": "Cushion",
-                "amount_spent": 20,
-                "purchased_date": "2024-06-23"
-            },
-            {
-                "transaction_id": "TXN082",
-                "customer_name": "Emily Johnson",
-                "purchased_product": "Bed Sheet",
-                "amount_spent": 40,
-                "purchased_date": "2024-06-25"
-            },
-            {
-                "transaction_id": "TXN083",
-                "customer_name": "Jane Smith",
-                "purchased_product": "Towel",
-                "amount_spent": 15,
-                "purchased_date": "2024-06-28"
-            },
-            {
-                "transaction_id": "TXN084",
-                "customer_name": "John Doe",
-                "purchased_product": "Bathrobe",
-                "amount_spent": 25,
-                "purchased_date": "2024-06-30"
-            },
-            {
-                "transaction_id": "TXN085",
-                "customer_name": "Michael Brown",
-                "purchased_product": "Slippers",
-                "amount_spent": 10,
-                "purchased_date": "2024-03-01"
-            },
-            {
-                "transaction_id": "TXN086",
-                "customer_name": "Emily Johnson",
-                "purchased_product": "Toothbrush",
-                "amount_spent": 5,
-                "purchased_date": "2024-03-04"
-            },
-            {
-                "transaction_id": "TXN087",
-                "customer_name": "Jane Smith",
-                "purchased_product": "Toothpaste",
-                "amount_spent": 3,
-                "purchased_date": "2024-03-06"
-            },
-            {
-                "transaction_id": "TXN088",
-                "customer_name": "John Doe",
-                "purchased_product": "Shampoo",
-                "amount_spent": 7,
-                "purchased_date": "2024-03-08"
-            },
-            {
-                "transaction_id": "TXN089",
-                "customer_name": "Michael Brown",
-                "purchased_product": "Conditioner",
-                "amount_spent": 8,
-                "purchased_date": "2024-03-10"
             },
             {
                 "transaction_id": "TXN090",
                 "customer_name": "Emily Johnson",
                 "purchased_product": "Body Wash",
-                "amount_spent": 6,
+                "price": 6,
                 "purchased_date": "2024-03-13"
+            },
+            {
+                "transaction_id": "TXN001",
+                "customer_name": "John Doe",
+                "purchased_product": "Laptop",
+                "price": 1200,
+                "purchased_date": "2024-03-15"
             },
             {
                 "transaction_id": "TXN091",
                 "customer_name": "Jane Smith",
                 "purchased_product": "Lotion",
-                "amount_spent": 12,
+                "price": 12,
                 "purchased_date": "2024-03-16"
+            },
+            {
+                "transaction_id": "TXN051",
+                "customer_name": "Jane Smith",
+                "purchased_product": "Oven",
+                "price": 400,
+                "purchased_date": "2024-03-17"
+            },
+            {
+                "transaction_id": "TXN002",
+                "customer_name": "Jane Smith",
+                "purchased_product": "Smartphone",
+                "price": 800,
+                "purchased_date": "2024-03-18"
             },
             {
                 "transaction_id": "TXN092",
                 "customer_name": "John Doe",
                 "purchased_product": "Face Wash",
-                "amount_spent": 10,
+                "price": 10,
                 "purchased_date": "2024-03-19"
+            },
+            {
+                "transaction_id": "TXN052",
+                "customer_name": "John Doe",
+                "purchased_product": "Refrigerator",
+                "price": 1200,
+                "purchased_date": "2024-03-20"
+            },
+            {
+                "transaction_id": "TXN016",
+                "customer_name": "John Doe",
+                "purchased_product": "Phone Case",
+                "price": 30,
+                "purchased_date": "2024-03-22"
             },
             {
                 "transaction_id": "TXN093",
                 "customer_name": "Michael Brown",
                 "purchased_product": "Sunscreen",
-                "amount_spent": 15,
+                "price": 15,
                 "purchased_date": "2024-03-22"
+            },
+            {
+                "transaction_id": "TXN053",
+                "customer_name": "Michael Brown",
+                "purchased_product": "Washing Machine",
+                "price": 800,
+                "purchased_date": "2024-03-24"
+            },
+            {
+                "transaction_id": "TXN003",
+                "customer_name": "John Doe",
+                "purchased_product": "Headphones",
+                "price": 150,
+                "purchased_date": "2024-03-25"
             },
             {
                 "transaction_id": "TXN094",
                 "customer_name": "Emily Johnson",
                 "purchased_product": "Razor",
-                "amount_spent": 10,
+                "price": 10,
                 "purchased_date": "2024-03-25"
+            },
+            {
+                "transaction_id": "TXN054",
+                "customer_name": "Emily Johnson",
+                "purchased_product": "Dryer",
+                "price": 700,
+                "purchased_date": "2024-03-27"
             },
             {
                 "transaction_id": "TXN095",
                 "customer_name": "Jane Smith",
                 "purchased_product": "Shaving Cream",
-                "amount_spent": 8,
+                "price": 8,
                 "purchased_date": "2024-03-28"
             },
             {
                 "transaction_id": "TXN096",
                 "customer_name": "John Doe",
                 "purchased_product": "Deodorant",
-                "amount_spent": 5,
+                "price": 5,
                 "purchased_date": "2024-03-30"
+            },
+            {
+                "transaction_id": "TXN055",
+                "customer_name": "Jane Smith",
+                "purchased_product": "Dishwasher",
+                "price": 600,
+                "purchased_date": "2024-04-01"
+            },
+            {
+                "transaction_id": "TXN017",
+                "customer_name": "Michael Brown",
+                "purchased_product": "Stylus Pen",
+                "price": 45,
+                "purchased_date": "2024-04-02"
             },
             {
                 "transaction_id": "TXN097",
                 "customer_name": "Michael Brown",
                 "purchased_product": "Perfume",
-                "amount_spent": 50,
+                "price": 50,
                 "purchased_date": "2024-04-03"
+            },
+            {
+                "transaction_id": "TXN004",
+                "customer_name": "Emily Johnson",
+                "purchased_product": "Tablet",
+                "price": 300,
+                "purchased_date": "2024-04-05"
             },
             {
                 "transaction_id": "TXN098",
                 "customer_name": "Emily Johnson",
                 "purchased_product": "Lip Balm",
-                "amount_spent": 4,
+                "price": 4,
                 "purchased_date": "2024-04-05"
+            },
+            {
+                "transaction_id": "TXN056",
+                "customer_name": "John Doe",
+                "purchased_product": "Air Conditioner",
+                "price": 500,
+                "purchased_date": "2024-04-06"
             },
             {
                 "transaction_id": "TXN099",
                 "customer_name": "Jane Smith",
                 "purchased_product": "Mascara",
-                "amount_spent": 15,
+                "price": 15,
                 "purchased_date": "2024-04-07"
+            },
+            {
+                "transaction_id": "TXN018",
+                "customer_name": "Emily Johnson",
+                "purchased_product": "External Hard Drive",
+                "price": 95,
+                "purchased_date": "2024-04-08"
             },
             {
                 "transaction_id": "TXN100",
                 "customer_name": "John Doe",
                 "purchased_product": "Eye Shadow",
-                "amount_spent": 20,
+                "price": 20,
                 "purchased_date": "2024-04-09"
+            },
+            {
+                "transaction_id": "TXN005",
+                "customer_name": "Michael Brown",
+                "purchased_product": "Smartwatch",
+                "price": 200,
+                "purchased_date": "2024-04-10"
+            },
+            {
+                "transaction_id": "TXN057",
+                "customer_name": "Michael Brown",
+                "purchased_product": "Heater",
+                "price": 200,
+                "purchased_date": "2024-04-11"
+            },
+            {
+                "transaction_id": "TXN019",
+                "customer_name": "Jane Smith",
+                "purchased_product": "Portable Speaker",
+                "price": 70,
+                "purchased_date": "2024-04-15"
+            },
+            {
+                "transaction_id": "TXN058",
+                "customer_name": "Emily Johnson",
+                "purchased_product": "Fan",
+                "price": 100,
+                "purchased_date": "2024-04-16"
+            },
+            {
+                "transaction_id": "TXN020",
+                "customer_name": "John Doe",
+                "purchased_product": "Webcam",
+                "price": 60,
+                "purchased_date": "2024-04-19"
+            },
+            {
+                "transaction_id": "TXN059",
+                "customer_name": "Jane Smith",
+                "purchased_product": "Water Heater",
+                "price": 300,
+                "purchased_date": "2024-04-20"
+            },
+            {
+                "transaction_id": "TXN006",
+                "customer_name": "Jane Smith",
+                "purchased_product": "Laptop",
+                "price": 1100,
+                "purchased_date": "2024-04-22"
+            },
+            {
+                "transaction_id": "TXN060",
+                "customer_name": "John Doe",
+                "purchased_product": "Iron",
+                "price": 50,
+                "purchased_date": "2024-04-24"
+            },
+            {
+                "transaction_id": "TXN021",
+                "customer_name": "Michael Brown",
+                "purchased_product": "Wireless Charger",
+                "price": 40,
+                "purchased_date": "2024-04-25"
+            },
+            {
+                "transaction_id": "TXN061",
+                "customer_name": "Michael Brown",
+                "purchased_product": "Vacuum Cleaner",
+                "price": 250,
+                "purchased_date": "2024-04-28"
+            },
+            {
+                "transaction_id": "TXN022",
+                "customer_name": "Emily Johnson",
+                "purchased_product": "Memory Card",
+                "price": 80,
+                "purchased_date": "2024-04-29"
+            },
+            {
+                "transaction_id": "TXN062",
+                "customer_name": "Emily Johnson",
+                "purchased_product": "Mop",
+                "price": 30,
+                "purchased_date": "2024-05-01"
+            },
+            {
+                "transaction_id": "TXN007",
+                "customer_name": "Emily Johnson",
+                "purchased_product": "Monitor",
+                "price": 250,
+                "purchased_date": "2024-05-03"
+            },
+            {
+                "transaction_id": "TXN023",
+                "customer_name": "Jane Smith",
+                "purchased_product": "Laptop Bag",
+                "price": 85,
+                "purchased_date": "2024-05-04"
+            },
+            {
+                "transaction_id": "TXN063",
+                "customer_name": "Jane Smith",
+                "purchased_product": "Broom",
+                "price": 10,
+                "purchased_date": "2024-05-05"
+            },
+            {
+                "transaction_id": "TXN064",
+                "customer_name": "John Doe",
+                "purchased_product": "Dustpan",
+                "price": 5,
+                "purchased_date": "2024-05-07"
+            },
+            {
+                "transaction_id": "TXN024",
+                "customer_name": "John Doe",
+                "purchased_product": "Bluetooth Adapter",
+                "price": 25,
+                "purchased_date": "2024-05-08"
+            },
+            {
+                "transaction_id": "TXN008",
+                "customer_name": "Michael Brown",
+                "purchased_product": "Keyboard",
+                "price": 120,
+                "purchased_date": "2024-05-11"
+            },
+            {
+                "transaction_id": "TXN065",
+                "customer_name": "Michael Brown",
+                "purchased_product": "Rug",
+                "price": 100,
+                "purchased_date": "2024-05-11"
+            },
+            {
+                "transaction_id": "TXN025",
+                "customer_name": "Michael Brown",
+                "purchased_product": "Microphone",
+                "price": 70,
+                "purchased_date": "2024-05-12"
+            },
+            {
+                "transaction_id": "TXN066",
+                "customer_name": "Emily Johnson",
+                "purchased_product": "Curtains",
+                "price": 150,
+                "purchased_date": "2024-05-15"
+            },
+            {
+                "transaction_id": "TXN026",
+                "customer_name": "Emily Johnson",
+                "purchased_product": "Camera Lens",
+                "price": 150,
+                "purchased_date": "2024-05-17"
+            },
+            {
+                "transaction_id": "TXN067",
+                "customer_name": "Jane Smith",
+                "purchased_product": "Blinds",
+                "price": 120,
+                "purchased_date": "2024-05-18"
+            },
+            {
+                "transaction_id": "TXN009",
+                "customer_name": "John Doe",
+                "purchased_product": "Mouse",
+                "price": 130,
+                "purchased_date": "2024-05-20"
+            },
+            {
+                "transaction_id": "TXN068",
+                "customer_name": "John Doe",
+                "purchased_product": "Bed",
+                "price": 900,
+                "purchased_date": "2024-05-22"
+            },
+            {
+                "transaction_id": "TXN027",
+                "customer_name": "Jane Smith",
+                "purchased_product": "Printer",
+                "price": 130,
+                "purchased_date": "2024-05-23"
+            },
+            {
+                "transaction_id": "TXN069",
+                "customer_name": "Michael Brown",
+                "purchased_product": "Sofa",
+                "price": 700,
+                "purchased_date": "2024-05-26"
+            },
+            {
+                "transaction_id": "TXN028",
+                "customer_name": "John Doe",
+                "purchased_product": "Scanner",
+                "price": 100,
+                "purchased_date": "2024-05-27"
+            },
+            {
+                "transaction_id": "TXN010",
+                "customer_name": "Emily Johnson",
+                "purchased_product": "Laptop",
+                "price": 900,
+                "purchased_date": "2024-06-01"
+            },
+            {
+                "transaction_id": "TXN029",
+                "customer_name": "Michael Brown",
+                "purchased_product": "Router",
+                "price": 120,
+                "purchased_date": "2024-06-05"
+            },
+            {
+                "transaction_id": "TXN074",
+                "customer_name": "Emily Johnson",
+                "purchased_product": "Desk",
+                "price": 300,
+                "purchased_date": "2024-06-06"
+            },
+            {
+                "transaction_id": "TXN011",
+                "customer_name": "Michael Brown",
+                "purchased_product": "Smartphone",
+                "price": 750,
+                "purchased_date": "2024-06-07"
+            },
+            {
+                "transaction_id": "TXN075",
+                "customer_name": "Jane Smith",
+                "purchased_product": "Wardrobe",
+                "price": 400,
+                "purchased_date": "2024-06-08"
+            },
+            {
+                "transaction_id": "TXN030",
+                "customer_name": "Emily Johnson",
+                "purchased_product": "Desktop PC",
+                "price": 900,
+                "purchased_date": "2024-06-10"
+            },
+            {
+                "transaction_id": "TXN039",
+                "customer_name": "Jane Smith",
+                "purchased_product": "Smart Lock",
+                "price": 150,
+                "purchased_date": "2024-06-11"
+            },
+            {
+                "transaction_id": "TXN076",
+                "customer_name": "John Doe",
+                "purchased_product": "Mattress",
+                "price": 600,
+                "purchased_date": "2024-06-11"
+            },
+            {
+                "transaction_id": "TXN040",
+                "customer_name": "John Doe",
+                "purchased_product": "Smart Doorbell",
+                "price": 200,
+                "purchased_date": "2024-06-13"
+            },
+            {
+                "transaction_id": "TXN077",
+                "customer_name": "Michael Brown",
+                "purchased_product": "Pillow",
+                "price": 30,
+                "purchased_date": "2024-06-13"
+            },
+            {
+                "transaction_id": "TXN031",
+                "customer_name": "Jane Smith",
+                "purchased_product": "Gaming Console",
+                "price": 400,
+                "purchased_date": "2024-06-14"
+            },
+            {
+                "transaction_id": "TXN012",
+                "customer_name": "Jane Smith",
+                "purchased_product": "Headphones",
+                "price": 150,
+                "purchased_date": "2024-06-15"
+            },
+            {
+                "transaction_id": "TXN041",
+                "customer_name": "Michael Brown",
+                "purchased_product": "Action Camera",
+                "price": 250,
+                "purchased_date": "2024-06-15"
+            },
+            {
+                "transaction_id": "TXN078",
+                "customer_name": "Emily Johnson",
+                "purchased_product": "Blanket",
+                "price": 50,
+                "purchased_date": "2024-06-16"
+            },
+            {
+                "transaction_id": "TXN042",
+                "customer_name": "Emily Johnson",
+                "purchased_product": "Electric Toothbrush",
+                "price": 100,
+                "purchased_date": "2024-06-18"
+            },
+            {
+                "transaction_id": "TXN079",
+                "customer_name": "Jane Smith",
+                "purchased_product": "Duvet",
+                "price": 100,
+                "purchased_date": "2024-06-18"
+            },
+            {
+                "transaction_id": "TXN032",
+                "customer_name": "John Doe",
+                "purchased_product": "VR Headset",
+                "price": 300,
+                "purchased_date": "2024-06-19"
+            },
+            {
+                "transaction_id": "TXN033",
+                "customer_name": "Michael Brown",
+                "purchased_product": "Fitness Tracker",
+                "price": 150,
+                "purchased_date": "2024-06-20"
+            },
+            {
+                "transaction_id": "TXN080",
+                "customer_name": "John Doe",
+                "purchased_product": "Quilt",
+                "price": 70,
+                "purchased_date": "2024-06-20"
+            },
+            {
+                "transaction_id": "TXN043",
+                "customer_name": "Jane Smith",
+                "purchased_product": "Hair Dryer",
+                "price": 50,
+                "purchased_date": "2024-06-21"
+            },
+            {
+                "transaction_id": "TXN034",
+                "customer_name": "Emily Johnson",
+                "purchased_product": "Drone",
+                "price": 500,
+                "purchased_date": "2024-06-22"
+            },
+            {
+                "transaction_id": "TXN081",
+                "customer_name": "Michael Brown",
+                "purchased_product": "Cushion",
+                "price": 20,
+                "purchased_date": "2024-06-23"
+            },
+            {
+                "transaction_id": "TXN044",
+                "customer_name": "John Doe",
+                "purchased_product": "Blender",
+                "price": 60,
+                "purchased_date": "2024-06-24"
+            },
+            {
+                "transaction_id": "TXN035",
+                "customer_name": "Jane Smith",
+                "purchased_product": "Smart Thermostat",
+                "price": 200,
+                "purchased_date": "2024-06-25"
+            },
+            {
+                "transaction_id": "TXN082",
+                "customer_name": "Emily Johnson",
+                "purchased_product": "Bed Sheet",
+                "price": 40,
+                "purchased_date": "2024-06-25"
+            },
+            {
+                "transaction_id": "TXN045",
+                "customer_name": "Michael Brown",
+                "purchased_product": "Vacuum Cleaner",
+                "price": 300,
+                "purchased_date": "2024-06-26"
+            },
+            {
+                "transaction_id": "TXN036",
+                "customer_name": "John Doe",
+                "purchased_product": "Electric Scooter",
+                "price": 400,
+                "purchased_date": "2024-06-27"
+            },
+            {
+                "transaction_id": "TXN037",
+                "customer_name": "Michael Brown",
+                "purchased_product": "Wireless Earbuds",
+                "price": 80,
+                "purchased_date": "2024-06-28"
+            },
+            {
+                "transaction_id": "TXN083",
+                "customer_name": "Jane Smith",
+                "purchased_product": "Towel",
+                "price": 15,
+                "purchased_date": "2024-06-28"
+            },
+            {
+                "transaction_id": "TXN046",
+                "customer_name": "Emily Johnson",
+                "purchased_product": "Air Purifier",
+                "price": 200,
+                "purchased_date": "2024-06-29"
+            },
+            {
+                "transaction_id": "TXN038",
+                "customer_name": "Emily Johnson",
+                "purchased_product": "Smart Light Bulb",
+                "price": 50,
+                "purchased_date": "2024-06-30"
+            },
+            {
+                "transaction_id": "TXN047",
+                "customer_name": "Jane Smith",
+                "purchased_product": "Water Filter",
+                "price": 100,
+                "purchased_date": "2024-06-30"
+            },
+            {
+                "transaction_id": "TXN084",
+                "customer_name": "John Doe",
+                "purchased_product": "Bathrobe",
+                "price": 25,
+                "purchased_date": "2024-06-30"
             }
         ]
     }
