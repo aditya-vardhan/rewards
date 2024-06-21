@@ -7,6 +7,8 @@ A customer receives 2 points for every dollar spent over $100 in each transactio
  
 This project calculates rewards of customers monthly based and total, Given a record of every transaction during a three month period.
 
+Live demo: https://rearmost-sleeve.000webhostapp.com/
+
 ## Available Scripts
 
 In the project directory, you can run:
