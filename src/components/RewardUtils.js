@@ -5,14 +5,16 @@ export const generateRewardsData = (purchaseData) => {
   const today = moment()
   const rewardsData = purchaseData.reduce(
     (acm, txn) => {
-      // no need to process txn if the amount is less than 100
-      if (txn.price < 100) {
+      // txn should be over 50$ to receive reward
+      if (txn.price <= 50) {
         return acm
       }
-      const reward = (txn.price - 100) * 2 + 50
+      // if txn is above 100$ user receives 2 reward points above 50  + 1 reward point between 50 to 100$
+      const reward = txn.price > 100 ? (txn.price - 100) * 2 + 50 : txn.price - 50
       // check if txn is older than three months
       const purchaseDate = moment(txn.purchased_date).format('YYYYMMDD')
       const diff = today.diff(purchaseDate, 'months')
+      // if txn is older than three months, avoid it
       if (diff > 3) {
         return acm
       }
