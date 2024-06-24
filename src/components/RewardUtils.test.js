@@ -20,19 +20,34 @@ test('Adds reward if txn amount is more than 100', () => {
   expect(rewardsData.monthlyUserRewards[0].reward).toBe(90)
 })
 
-test('Reward is not generated if txn amount is less than 100', () => {
+test('Reward is not generated if txn amount not above 50', () => {
   const purchaseData = [
     {
       transaction_id: 'TXN085',
       customer_name: 'Michael Brown',
       purchased_product: 'Slippers',
-      price: 99,
+      price: 50,
       purchased_date: moment().format('YYYYMMDD')
     }
   ]
   const rewardsData = generateRewardsData(purchaseData)
   expect(rewardsData.totalUserRewards.length).toBe(0)
   expect(rewardsData.monthlyUserRewards.length).toBe(0)
+})
+
+test('One point reward is generated for each dollar between 50 and 100 transactions', () => {
+  const purchaseData = [
+    {
+      transaction_id: 'TXN085',
+      customer_name: 'Michael Brown',
+      purchased_product: 'Slippers',
+      price: 98,
+      purchased_date: moment().format('YYYYMMDD')
+    }
+  ]
+  const rewardsData = generateRewardsData(purchaseData)
+  expect(rewardsData.totalUserRewards[0].reward).toBe(48)
+  expect(rewardsData.monthlyUserRewards[0].reward).toBe(48)
 })
 
 test('Reward generated is 50 if txn amount is equals 100', () => {
