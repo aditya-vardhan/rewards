@@ -1,7 +1,7 @@
 import moment from 'moment'
 import { generateRewardsData } from './RewardUtils'
 
-test('Adds reward if txn amount is more than 100', () => {
+test('Adds reward if txn amount is more than 50', () => {
   const purchaseData = [
     {
       transaction_id: 'TXN085',
