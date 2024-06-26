@@ -5,6 +5,6 @@ const URLDictionary = {
   default: {
     getPurchaseDataURL: () => `/api/purchaseData`
   }
-}
+};
 
-export default URLDictionary
+export default URLDictionary;
