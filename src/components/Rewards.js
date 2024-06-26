@@ -1,35 +1,35 @@
-import { useEffect, useState } from 'react'
-import PurchaseDataService from '../services/PurchaseDataService'
-import './Rewards.css'
-import { generateRewardsData } from './RewardUtils'
-import logger from '../logger'
+import { useEffect, useState } from 'react';
+import PurchaseDataService from '../services/PurchaseDataService';
+import './Rewards.css';
+import { generateRewardsData } from './RewardUtils';
+import logger from '../logger';
 
 function Rewards() {
-  const [rewardsData, setRewardsData] = useState({})
+  const [rewardsData, setRewardsData] = useState({});
 
   const getPurchaseData = async () => {
     try {
-      const purchaseDataResponse = await PurchaseDataService('mock')
-      const rewardsInfo = generateRewardsData(purchaseDataResponse.result.data)
-      setRewardsData(rewardsInfo)
+      const purchaseDataResponse = await PurchaseDataService('mock');
+      const rewardsInfo = generateRewardsData(purchaseDataResponse.result.data);
+      setRewardsData(rewardsInfo);
     } catch (error) {
-      logger.error(error)
+      logger.error(error);
     }
-  }
+  };
 
   const sortByName = (a, b) => {
     if (a.customer_name < b.customer_name) {
-      return -1
+      return -1;
     }
     if (a.customer_name > b.customer_name) {
-      return 1
+      return 1;
     }
-    return 0
-  }
+    return 0;
+  };
 
   useEffect(() => {
-    getPurchaseData()
-  }, [])
+    getPurchaseData();
+  }, []);
   return (
     <>
       <div className='floatLeft'>
@@ -39,6 +39,8 @@ function Rewards() {
             <tr>
               <th>Name</th>
               <th>Month</th>
+              <th>Eligible amount($)</th>
+              <th>Eligible transactions</th>
               <th>Reward Points</th>
             </tr>
           </thead>
@@ -48,19 +50,23 @@ function Rewards() {
                 <tr key={key}>
                   <td>{row.customer_name}</td>
                   <td>{row.month}</td>
+                  <td>{row.txnAmount}</td>
+                  <td>{row.eligibleTxns}</td>
                   <td>{row.reward}</td>
                 </tr>
-              )
+              );
             })}
           </tbody>
         </table>
       </div>
-      <div className='floatLeft'>
+      <div className='floatRight'>
         <div className='table-header total-rewards'>User total purchase rewards data</div>
         <table>
           <thead>
             <tr>
               <th>Name</th>
+              <th>Eligible amount($)</th>
+              <th>Eligible transactions</th>
               <th>Reward Points</th>
             </tr>
           </thead>
@@ -69,15 +75,17 @@ function Rewards() {
               return (
                 <tr key={key}>
                   <td>{row.customer_name}</td>
+                  <td>{row.txnAmount}</td>
+                  <td>{row.eligibleTxns}</td>
                   <td>{row.reward}</td>
                 </tr>
-              )
+              );
             })}
           </tbody>
         </table>
       </div>
     </>
-  )
+  );
 }
 
-export default Rewards
+export default Rewards;
