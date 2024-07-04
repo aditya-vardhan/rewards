@@ -49,6 +49,7 @@ function Rewards() {
   }
 
   const showTotalUserRewards = (totalUserRewards) => {
+    if(!totalUserRewards) return <></>;
     return totalUserRewards?.map((row, key) => {
       return (
         <tr key={key}>
