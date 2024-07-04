@@ -209,7 +209,7 @@
                 "transaction_id": "TXN004",
                 "customer_name": "Emily Johnson",
                 "purchased_product": "Tablet",
-                "price": 300,
+                "price": 300.12,
                 "purchased_date": "2024-04-05"
             },
             {
