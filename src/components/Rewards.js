@@ -6,14 +6,17 @@ import logger from '../logger';
 
 function Rewards() {
   const [rewardsData, setRewardsData] = useState({});
+  const [error, setError] = useState('');
 
   const getPurchaseData = async () => {
     try {
       const purchaseDataResponse = await PurchaseDataService('mock');
       const rewardsInfo = generateRewardsData(purchaseDataResponse.result.data);
       setRewardsData(rewardsInfo);
+      setError('');
     } catch (error) {
       logger.error(error);
+      setError('Something went wrong please reload');
     }
   };
 
@@ -30,6 +33,39 @@ function Rewards() {
   useEffect(() => {
     getPurchaseData();
   }, []);
+
+  const showMonthlyRewards = (monthlyRewards) => {
+    if(!monthlyRewards) return <></>;
+    return [...monthlyRewards]?.sort(sortByName).map((row, key) => {
+      return (
+        <tr key={key}>
+          <td>{row.customer_name}</td>
+          <td>{row.month}</td>
+          <td>{row.txnAmount}</td>
+          <td>{row.eligibleTxns}</td>
+          <td>{row.reward}</td>
+        </tr>
+      );
+    })
+  }
+
+  const showTotalUserRewards = (totalUserRewards) => {
+    return totalUserRewards?.map((row, key) => {
+      return (
+        <tr key={key}>
+          <td>{row.customer_name}</td>
+          <td>{row.txnAmount}</td>
+          <td>{row.eligibleTxns}</td>
+          <td>{row.reward}</td>
+        </tr>
+      );
+    })
+  }
+
+  if(error) {
+    return <>{error}</>
+  }
+
   return (
     <>
       <div className='floatLeft'>
@@ -45,17 +81,7 @@ function Rewards() {
             </tr>
           </thead>
           <tbody>
-            {rewardsData.monthlyUserRewards?.sort(sortByName).map((row, key) => {
-              return (
-                <tr key={key}>
-                  <td>{row.customer_name}</td>
-                  <td>{row.month}</td>
-                  <td>{row.txnAmount}</td>
-                  <td>{row.eligibleTxns}</td>
-                  <td>{row.reward}</td>
-                </tr>
-              );
-            })}
+            {showMonthlyRewards(rewardsData.monthlyUserRewards)}
           </tbody>
         </table>
       </div>
@@ -71,16 +97,7 @@ function Rewards() {
             </tr>
           </thead>
           <tbody>
-            {rewardsData.totalUserRewards?.map((row, key) => {
-              return (
-                <tr key={key}>
-                  <td>{row.customer_name}</td>
-                  <td>{row.txnAmount}</td>
-                  <td>{row.eligibleTxns}</td>
-                  <td>{row.reward}</td>
-                </tr>
-              );
-            })}
+            {showTotalUserRewards(rewardsData.totalUserRewards)}
           </tbody>
         </table>
       </div>
