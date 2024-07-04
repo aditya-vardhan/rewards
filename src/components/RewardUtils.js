@@ -19,6 +19,15 @@ export const generateRewardsData = (purchaseData) => {
         return acm;
       }
 
+      const validTransaction = {
+        customer_name: txn.customer_name,
+        date: moment(txn.purchased_date).format("MMM Do"),
+        txnAmount: txn.price,
+        reward: reward,
+        txnId: txn.transaction_id
+      }
+      acm.userTransactions.push(validTransaction);
+
       const purchaseMonth = moment(txn.purchased_date).format('MMMM');
 
       const monthlyRewardIndex = acm.monthlyUserRewards.findIndex(
@@ -60,7 +69,7 @@ export const generateRewardsData = (purchaseData) => {
 
       return acm;
     },
-    { totalUserRewards: [], monthlyUserRewards: [] }
+    { totalUserRewards: [], monthlyUserRewards: [], userTransactions: [] }
   );
   logger.log('Generated rewards data: ', rewardsData);
   return rewardsData;

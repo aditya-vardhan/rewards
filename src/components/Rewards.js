@@ -62,13 +62,45 @@ function Rewards() {
     })
   }
 
+  const showTransactions = (userTransactions) => {
+    if(!userTransactions) return <></>;
+    return [...userTransactions]?.sort(sortByName).map((row, key) => {
+      return (
+        <tr key={key}>
+          <td>{row.customer_name}</td>
+          <td>{row.date}</td>
+          <td>{row.txnId}</td>
+          <td>{row.txnAmount}</td>
+          <td>{row.reward}</td>
+        </tr>
+      );
+    })
+  }
+
   if (error) {
     return <p>{error.message}</p>
   }
 
   return (
     <>
-      <div className='floatLeft'>
+      <div>
+        <div className='table-header total-rewards'>User individual rewards data</div>
+        <table>
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Date</th>
+              <th>Transaction Id</th>
+              <th>Amount($)</th>
+              <th>Reward Points</th>
+            </tr>
+          </thead>
+          <tbody>
+            {showTransactions(rewardsData.userTransactions)}
+          </tbody>
+        </table>
+      </div>
+      <div className=''>
         <div className='table-header monthly-rewards'>User Monthly rewards data</div>
         <table>
           <thead>
@@ -85,7 +117,7 @@ function Rewards() {
           </tbody>
         </table>
       </div>
-      <div className='floatRight'>
+      <div className=''>
         <div className='table-header total-rewards'>User total purchase rewards data</div>
         <table>
           <thead>
