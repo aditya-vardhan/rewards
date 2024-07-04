@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import { pages } from '../utils/utils';
 import './Header.css';
 
@@ -15,7 +16,7 @@ function Header() {
         </div>
         <div className="nav">
             {pages.map((record, key) => (
-                <a key={`page-${key}`} href={`#${record.id}`}>{record.name}</a>
+                <Link key={`page-${key}`} to={`#${record.id}`}>{record.name}</Link>
             ))}
         </div>
     </body>
