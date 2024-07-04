@@ -6,17 +6,16 @@ import logger from '../logger';
 
 function Rewards() {
   const [rewardsData, setRewardsData] = useState({});
-  const [error, setError] = useState('');
+  const [error, setError] = useState(null);
 
   const getPurchaseData = async () => {
     try {
       const purchaseDataResponse = await PurchaseDataService('mock');
       const rewardsInfo = generateRewardsData(purchaseDataResponse.result.data);
       setRewardsData(rewardsInfo);
-      setError('');
     } catch (error) {
       logger.error(error);
-      setError('Something went wrong please reload');
+      setError(error);
     }
   };
 
@@ -62,8 +61,8 @@ function Rewards() {
     })
   }
 
-  if(error) {
-    return <>{error}</>
+  if (error) {
+    return <p>{error.message}</p>
   }
 
   return (
