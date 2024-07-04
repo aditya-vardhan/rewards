@@ -11,14 +11,7 @@ export const generateRewardsData = (purchaseData) => {
       }
       // if txn is above 100$ user receives 2 reward points above 50  + 1 reward point between 50 to 100$
       const reward = txn.price > 100 ? (txn.price - 100) * 2 + 50 : txn.price - 50;
-      // check if txn is older than three months
-      const purchaseDate = moment(txn.purchased_date).format('YYYYMMDD');
-      const diff = today.diff(purchaseDate, 'months');
-      // if txn is older than three months, avoid it
-      if (diff > 3) {
-        return acm;
-      }
-
+      
       const purchaseMonth = moment(txn.purchased_date).format('MMMM');
 
       const monthlyRewardIndex = acm.monthlyUserRewards.findIndex(

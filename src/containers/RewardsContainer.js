@@ -1,4 +1,5 @@
 import Rewards from '../components/Rewards';
+import './RewardsContainer.css'
 
 function RewardsContainer() {
   return (
