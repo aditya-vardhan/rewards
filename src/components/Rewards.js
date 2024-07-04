@@ -41,7 +41,6 @@ function Rewards() {
           <td>{row.customer_name}</td>
           <td>{row.month}</td>
           <td>{row.txnAmount}</td>
-          <td>{row.eligibleTxns}</td>
           <td>{row.reward}</td>
         </tr>
       );
@@ -62,45 +61,13 @@ function Rewards() {
     })
   }
 
-  const showTransactions = (userTransactions) => {
-    if(!userTransactions) return <></>;
-    return [...userTransactions]?.sort(sortByName).map((row, key) => {
-      return (
-        <tr key={key}>
-          <td>{row.customer_name}</td>
-          <td>{row.date}</td>
-          <td>{row.txnId}</td>
-          <td>{row.txnAmount}</td>
-          <td>{row.reward}</td>
-        </tr>
-      );
-    })
-  }
-
   if (error) {
     return <p>{error.message}</p>
   }
 
   return (
     <>
-      <div>
-        <div className='table-header total-rewards'>User individual rewards data</div>
-        <table>
-          <thead>
-            <tr>
-              <th>Name</th>
-              <th>Date</th>
-              <th>Transaction Id</th>
-              <th>Amount($)</th>
-              <th>Reward Points</th>
-            </tr>
-          </thead>
-          <tbody>
-            {showTransactions(rewardsData.userTransactions)}
-          </tbody>
-        </table>
-      </div>
-      <div className=''>
+      <div className='floatLeft'>
         <div className='table-header monthly-rewards'>User Monthly rewards data</div>
         <table>
           <thead>
@@ -108,7 +75,6 @@ function Rewards() {
               <th>Name</th>
               <th>Month</th>
               <th>Eligible amount($)</th>
-              <th>Eligible transactions</th>
               <th>Reward Points</th>
             </tr>
           </thead>
@@ -117,14 +83,14 @@ function Rewards() {
           </tbody>
         </table>
       </div>
-      <div className=''>
+      <div className='floatRight'>
         <div className='table-header total-rewards'>User total purchase rewards data</div>
         <table>
           <thead>
             <tr>
               <th>Name</th>
               <th>Eligible amount($)</th>
-              <th>Eligible transactions</th>
+              <th>Transactions</th>
               <th>Reward Points</th>
             </tr>
           </thead>
