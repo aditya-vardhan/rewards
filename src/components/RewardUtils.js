@@ -32,6 +32,7 @@ export const generateRewardsData = (purchaseData) => {
         acm.monthlyUserRewards[monthlyRewardIndex].eligibleTxns += 1;
       } else {
         const userMonthlyReward = {
+          customer_id: txn.customer_id,
           customer_name: txn.customer_name,
           month: purchaseMonth,
           txnAmount: txn.price,
@@ -50,6 +51,7 @@ export const generateRewardsData = (purchaseData) => {
         acm.totalUserRewards[totalRewardsIndex].eligibleTxns += 1;
       } else {
         const userTotalReward = {
+          customer_id: txn.customer_id,
           customer_name: txn.customer_name,
           txnAmount: txn.price,
           reward: reward,

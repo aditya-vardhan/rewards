@@ -38,6 +38,7 @@ function Rewards() {
     return [...monthlyRewards]?.sort(sortByName).map((row, key) => {
       return (
         <tr key={key}>
+          <td>{row.customer_id}</td>
           <td>{row.customer_name}</td>
           <td>{row.month}</td>
           <td>{row.txnAmount}</td>
@@ -52,6 +53,7 @@ function Rewards() {
     return totalUserRewards?.map((row, key) => {
       return (
         <tr key={key}>
+          <td>{row.customer_id}</td>
           <td>{row.customer_name}</td>
           <td>{row.txnAmount}</td>
           <td>{row.eligibleTxns}</td>
@@ -72,9 +74,10 @@ function Rewards() {
         <table>
           <thead>
             <tr>
+              <th>Customer ID</th>
               <th>Name</th>
               <th>Month</th>
-              <th>Eligible amount($)</th>
+              <th>Purchase amount($)</th>
               <th>Reward Points</th>
             </tr>
           </thead>
@@ -88,8 +91,9 @@ function Rewards() {
         <table>
           <thead>
             <tr>
+              <th>Customer ID</th>
               <th>Name</th>
-              <th>Eligible amount($)</th>
+              <th>Purchase amount($)</th>
               <th>Transactions</th>
               <th>Reward Points</th>
             </tr>

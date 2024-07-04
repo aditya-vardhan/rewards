@@ -5,6 +5,7 @@
             {
                 "transaction_id": "TXN050",
                 "customer_name": "Emily",
+                "customer_id": 1,
                 "purchased_product": "Microwave",
                 "price": 150,
                 "purchased_date": "2024-05-12"
@@ -12,6 +13,7 @@
             {
                 "transaction_id": "TXN051",
                 "customer_name": "Jane",
+                "customer_id": 2,
                 "purchased_product": "Oven",
                 "price": 120,
                 "purchased_date": "2024-05-17"
@@ -19,6 +21,7 @@
             {
                 "transaction_id": "TXN010",
                 "customer_name": "Emily",
+                "customer_id": 1,
                 "purchased_product": "Laptop",
                 "price": 170,
                 "purchased_date": "2024-06-01"
@@ -26,6 +29,7 @@
             {
                 "transaction_id": "TXN031",
                 "customer_name": "Jane",
+                "customer_id": 2,
                 "purchased_product": "Gaming Console",
                 "price": 80,
                 "purchased_date": "2024-06-14"
@@ -33,6 +37,7 @@
             {
                 "transaction_id": "TXN031",
                 "customer_name": "Jane",
+                "customer_id": 2,
                 "purchased_product": "Gaming Console",
                 "price": 120,
                 "purchased_date": "2024-07-03"
@@ -40,6 +45,7 @@
             {
                 "transaction_id": "TXN031",
                 "customer_name": "Smith",
+                "customer_id": 3,
                 "purchased_product": "Gaming Console",
                 "price": 100,
                 "purchased_date": "2024-06-14"
@@ -47,6 +53,7 @@
             {
                 "transaction_id": "TXN031",
                 "customer_name": "Smith",
+                "customer_id": 3,
                 "purchased_product": "Gaming Console",
                 "price": 150,
                 "purchased_date": "2024-07-03"
