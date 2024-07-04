@@ -13,14 +13,14 @@
                 "transaction_id": "TXN051",
                 "customer_name": "Jane",
                 "purchased_product": "Oven",
-                "price": 400,
+                "price": 120,
                 "purchased_date": "2024-05-17"
             },
             {
                 "transaction_id": "TXN010",
                 "customer_name": "Emily",
                 "purchased_product": "Laptop",
-                "price": 900,
+                "price": 170,
                 "purchased_date": "2024-06-01"
             },
             {
