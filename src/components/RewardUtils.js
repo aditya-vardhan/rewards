@@ -11,6 +11,7 @@ export const getUserRewardsData = (purchaseData) => {
     const reward = txn.price > 100 ? (txn.price - 100) * 2 + 50 : txn.price - 50;
 
     const validTransaction = {
+      customer_id: txn.customer_id,
       customer_name: txn.customer_name,
       date: moment(txn.purchased_date).format('MMM Do'),
       txnAmount: txn.price,

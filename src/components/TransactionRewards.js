@@ -27,6 +27,7 @@ function TransactionRewards() {
     return [...userTransactions]?.sort(sortByName).map((row, key) => {
       return (
         <tr key={key}>
+          <td>{row.customer_id}</td>
           <td>{row.customer_name}</td>
           <td>{row.date}</td>
           <td>{row.txnId}</td>
@@ -51,6 +52,7 @@ function TransactionRewards() {
               <th>Customer ID</th>
               <th>Name</th>
               <th>Month</th>
+              <th>Transaction ID</th>
               <th>Purchase amount($)</th>
               <th>Reward Points</th>
             </tr>
