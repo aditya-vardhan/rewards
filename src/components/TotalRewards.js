@@ -45,7 +45,7 @@ function TotalRewards() {
   return (
     <>
       <div className=''>
-        <h2 className='table-header total-rewards'>User total purchase rewards data</h2>
+        <h3 className='table-header total-rewards'>User total purchase rewards data</h3>
         <table>
           <thead>
             <tr>

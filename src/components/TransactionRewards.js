@@ -46,7 +46,7 @@ function TransactionRewards() {
   return (
     <>
       <div className=''>
-        <h2 className='table-header transaction-rewards'>User individual rewards data</h2>
+        <h3 className='table-header transaction-rewards'>User individual rewards data</h3>
         <table>
           <thead>
             <tr>
