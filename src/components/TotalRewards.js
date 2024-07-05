@@ -30,7 +30,6 @@ function TotalRewards() {
           <td>{row.customer_id}</td>
           <td>{row.customer_name}</td>
           <td>{row.txnAmount}</td>
-          <td>{row.eligibleTxns}</td>
           <td>{row.reward}</td>
         </tr>
       );
@@ -51,7 +50,6 @@ function TotalRewards() {
               <th>Customer ID</th>
               <th>Name</th>
               <th>Purchase amount($)</th>
-              <th>Transactions</th>
               <th>Reward Points</th>
             </tr>
           </thead>
