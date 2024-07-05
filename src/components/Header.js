@@ -16,7 +16,7 @@ function Header() {
         </div>
         <div className="nav">
             {pages.map((record, key) => (
-                <Link key={`page-${key}`} to={`#${record.id}`}>{record.name}</Link>
+                <Link key={`page-${key}`} to={`${record.id}`}>{record.name}</Link>
             ))}
         </div>
     </body>
