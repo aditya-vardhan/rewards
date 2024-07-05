@@ -42,23 +42,21 @@ function MonthlyRewards() {
   }
 
   return (
-    <>
-      <div className=''>
-        <h3 className='table-header monthly-rewards'>User Monthly rewards data</h3>
-        <table>
-          <thead>
-            <tr>
-              <th>Customer ID</th>
-              <th>Name</th>
-              <th>Month</th>
-              <th>Purchase amount($)</th>
-              <th>Reward Points</th>
-            </tr>
-          </thead>
-          <tbody>{showMonthlyRewards(rewardsData)}</tbody>
-        </table>
-      </div>
-    </>
+    <div className='container'>
+      <h3 className='table-header monthly-rewards'>User Monthly rewards data</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Customer ID</th>
+            <th>Name</th>
+            <th>Month</th>
+            <th>Purchase amount($)</th>
+            <th>Reward Points</th>
+          </tr>
+        </thead>
+        <tbody>{showMonthlyRewards(rewardsData)}</tbody>
+      </table>
+    </div>
   );
 }
 

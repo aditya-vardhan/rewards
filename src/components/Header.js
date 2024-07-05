@@ -3,17 +3,20 @@ import { pages } from '../utils/utils';
 import './Header.css';
 
 function Header() {
+  const getPageHeads = (pagesData) => {
+    return pagesData.map((record, key) => (
+      <NavLink
+        key={`page-${key}`}
+        to={`${record.path}`}
+        className={({ isActive }) => {
+          return isActive ? 'active-nav' : '';
+        }}
+      >
+        {record.name}
+      </NavLink>
+    ));
+  };
 
-    const getPageHeads = (pagesData) => {
-        return pagesData.map((record, key) => (
-            <NavLink key={`page-${key}`} to={`${record.path}`}
-            className={({isActive})=>{
-                return isActive ? 'active-nav':''
-            }}
-            >{record.name}</NavLink>
-        ))
-    }
-    
   return (
     <>
       <div className='header'>
@@ -34,9 +37,7 @@ function Header() {
           </svg>
         </div>
       </div>
-      <div className='nav'>
-        {getPageHeads(pages)}
-      </div>
+      <div className='nav'>{getPageHeads(pages)}</div>
     </>
   );
 }

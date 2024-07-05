@@ -41,22 +41,20 @@ function TotalRewards() {
   }
 
   return (
-    <>
-      <div className=''>
-        <h3 className='table-header total-rewards'>User total purchase rewards data</h3>
-        <table>
-          <thead>
-            <tr>
-              <th>Customer ID</th>
-              <th>Name</th>
-              <th>Purchase amount($)</th>
-              <th>Reward Points</th>
-            </tr>
-          </thead>
-          <tbody>{showTotalUserRewards(rewardsData)}</tbody>
-        </table>
-      </div>
-    </>
+    <div className='container'>
+      <h3 className='table-header total-rewards'>User total purchase rewards data</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Customer ID</th>
+            <th>Name</th>
+            <th>Purchase amount($)</th>
+            <th>Reward Points</th>
+          </tr>
+        </thead>
+        <tbody>{showTotalUserRewards(rewardsData)}</tbody>
+      </table>
+    </div>
   );
 }
 
