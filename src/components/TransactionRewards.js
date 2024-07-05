@@ -18,14 +18,12 @@ function TransactionRewards() {
     }
   };
 
-
   useEffect(() => {
     getPurchaseData();
   }, []);
 
-  
   const showTransactions = (userTransactions) => {
-    if(!userTransactions) return <></>;
+    if (!userTransactions) return <></>;
     return [...userTransactions]?.sort(sortByName).map((row, key) => {
       return (
         <tr key={key}>
@@ -36,11 +34,11 @@ function TransactionRewards() {
           <td>{row.reward}</td>
         </tr>
       );
-    })
-  }
+    });
+  };
 
   if (error) {
-    return <p>{error.message}</p>
+    return <p>{error.message}</p>;
   }
 
   return (
@@ -57,9 +55,7 @@ function TransactionRewards() {
               <th>Reward Points</th>
             </tr>
           </thead>
-          <tbody>
-            {showTransactions(rewardsData)}
-          </tbody>
+          <tbody>{showTransactions(rewardsData)}</tbody>
         </table>
       </div>
     </>

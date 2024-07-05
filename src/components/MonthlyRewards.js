@@ -23,7 +23,7 @@ function MonthlyRewards() {
   }, []);
 
   const showMonthlyRewards = (monthlyRewards) => {
-    if(!monthlyRewards) return <></>;
+    if (!monthlyRewards) return <></>;
     return [...monthlyRewards]?.sort(sortByName).map((row, key) => {
       return (
         <tr key={key}>
@@ -34,12 +34,11 @@ function MonthlyRewards() {
           <td>{row.reward}</td>
         </tr>
       );
-    })
-  }
-
+    });
+  };
 
   if (error) {
-    return <p>{error.message}</p>
+    return <p>{error.message}</p>;
   }
 
   return (
@@ -56,9 +55,7 @@ function MonthlyRewards() {
               <th>Reward Points</th>
             </tr>
           </thead>
-          <tbody>
-            {showMonthlyRewards(rewardsData)}
-          </tbody>
+          <tbody>{showMonthlyRewards(rewardsData)}</tbody>
         </table>
       </div>
     </>

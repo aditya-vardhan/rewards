@@ -19,7 +19,6 @@ test('getTotalRewardsData: Adds reward if txn amount is more than 100', () => {
   expect(totalRewardsData[0].reward).toBe(90);
 });
 
-
 test('getUserRewardsData: Adds reward if txn amount is more than 100', () => {
   const purchaseData = [
     {
@@ -37,7 +36,6 @@ test('getUserRewardsData: Adds reward if txn amount is more than 100', () => {
   // total reward points is 40 + 50 = 90 points
   expect(txnRewardsData[0].reward).toBe(90);
 });
-
 
 test('getMonthlyRewardsData: Adds reward if txn amount is more than 100', () => {
   const purchaseData = [

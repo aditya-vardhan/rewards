@@ -22,10 +22,9 @@ function TotalRewards() {
     getPurchaseData();
   }, []);
 
-
   const showTotalUserRewards = (totalUserRewards) => {
-    if(!totalUserRewards) return <></>;
-    return totalUserRewards?.map((row, key) => {
+    if (!totalUserRewards) return <></>;
+    return [...totalUserRewards].sort(sortByName).map((row, key) => {
       return (
         <tr key={key}>
           <td>{row.customer_id}</td>
@@ -35,11 +34,11 @@ function TotalRewards() {
           <td>{row.reward}</td>
         </tr>
       );
-    })
-  }
+    });
+  };
 
   if (error) {
-    return <p>{error.message}</p>
+    return <p>{error.message}</p>;
   }
 
   return (
@@ -56,9 +55,7 @@ function TotalRewards() {
               <th>Reward Points</th>
             </tr>
           </thead>
-          <tbody>
-            {showTotalUserRewards(rewardsData)}
-          </tbody>
+          <tbody>{showTotalUserRewards(rewardsData)}</tbody>
         </table>
       </div>
     </>
