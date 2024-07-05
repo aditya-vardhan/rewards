@@ -14,7 +14,9 @@ Live demo: https://rearmost-sleeve.000webhostapp.com/
 
 
 
-https://github.com/aditya-vardhan/rewards/assets/15606535/c0654bc7-dc06-4629-8280-c4ebb879e3f9
+
+https://github.com/aditya-vardhan/rewards/assets/15606535/7bb9b8d4-49b2-4cce-9263-33a2753692b4
+
 
 
 
