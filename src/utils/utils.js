@@ -14,6 +14,6 @@ export const pages = [{
 },
 {
     id: 'configure',
-    path: '/congigure',
+    path: '/configure',
     name: 'Configuration'
 }];
