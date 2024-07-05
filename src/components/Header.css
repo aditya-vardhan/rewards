@@ -35,3 +35,7 @@ body {
     text-decoration: none;
     padding: 10px;
 }
+
+.active-nav {
+    background-color: #0c6b49;
+}

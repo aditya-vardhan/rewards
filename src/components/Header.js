@@ -1,8 +1,9 @@
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import { pages } from '../utils/utils';
 import './Header.css';
 
 function Header() {
+
     return <body>
         <div className="header">
             <div className="logo">Retailer Shop</div>
@@ -16,7 +17,11 @@ function Header() {
         </div>
         <div className="nav">
             {pages.map((record, key) => (
-                <Link key={`page-${key}`} to={`${record.id}`}>{record.name}</Link>
+                <NavLink key={`page-${key}`} to={`${record.path}`}
+                className={({isActive})=>{
+                    return isActive ? 'active-nav':''
+                }}
+                >{record.name}</NavLink>
             ))}
         </div>
     </body>
