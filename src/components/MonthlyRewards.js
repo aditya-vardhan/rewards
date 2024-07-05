@@ -45,7 +45,7 @@ function MonthlyRewards() {
   return (
     <>
       <div className=''>
-        <div className='table-header monthly-rewards'>User Monthly rewards data</div>
+        <h2 className='table-header monthly-rewards'>User Monthly rewards data</h2>
         <table>
           <thead>
             <tr>
