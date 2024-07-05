@@ -9,6 +9,15 @@ This project calculates rewards of customers monthly based and total, Given a re
 
 Live demo: https://rearmost-sleeve.000webhostapp.com/
 
+
+## User Experience
+
+
+
+https://github.com/aditya-vardhan/rewards/assets/15606535/c0654bc7-dc06-4629-8280-c4ebb879e3f9
+
+
+
 ## Available Scripts
 
 In the project directory, you can run:
