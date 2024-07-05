@@ -3,5 +3,5 @@ import TransactionRewards from './TransactionRewards';
 
 test('loads total rewards container', () => {
   const { container } = render(<TransactionRewards />);
-  expect(container.querySelector('.total-rewards')).not.toBeNull();
+  expect(container.querySelector('.transaction-rewards')).not.toBeNull();
 });

@@ -3,5 +3,5 @@ import MonthlyRewards from './MonthlyRewards';
 
 test('loads total rewards container', () => {
   const { container } = render(<MonthlyRewards />);
-  expect(container.querySelector('.total-rewards')).not.toBeNull();
+  expect(container.querySelector('.monthly-rewards')).not.toBeNull();
 });
