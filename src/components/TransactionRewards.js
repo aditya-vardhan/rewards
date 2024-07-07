@@ -45,7 +45,13 @@ function TransactionRewards({ rewardCriteria }) {
 
   return (
     <div className='container'>
-      <h3 className='table-header transaction-rewards'>User individual rewards data</h3>
+      <h3 className='table-header transaction-rewards'>User individual transactions data</h3>
+      <span className='note'>
+        (Note: One point reward: {'>'}
+        {onePointReward}$, Two point reward: {'>'}
+        {twoPointReward}$)
+      </span>
+      <span></span>
       <table>
         <thead>
           <tr>

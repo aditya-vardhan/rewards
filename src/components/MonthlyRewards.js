@@ -45,6 +45,11 @@ function MonthlyRewards({ rewardCriteria }) {
   return (
     <div className='container'>
       <h3 className='table-header monthly-rewards'>User Monthly rewards data</h3>
+      <span className='note'>
+        (Note: One point reward: {'>'}
+        {onePointReward}$, Two point reward: {'>'}
+        {twoPointReward}$)
+      </span>
       <table>
         <thead>
           <tr>
