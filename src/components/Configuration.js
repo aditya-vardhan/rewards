@@ -1,23 +1,32 @@
 import { useState } from 'react';
 import './Configuration.css'
+import SuccessAlert from './SuccessAlert';
 
 function Configuration(props) {
     const {rewardCriteria, setRewardCriteria} = props;
 
     const [onePointThreshold, setOnePointThreshold] = useState(rewardCriteria.onePointReward)
     const [twoPointThreshold, setTwoPointThreshold] = useState(rewardCriteria.twoPointReward)
+    const [changed, setChanged] = useState(false);
 
     const changeCriteria = (onePointThreshold, twoPointThreshold) => {
-        console.log('eeeee')
         const updatedOnePointThreshold = Number(onePointThreshold);
         const updatedTwoPointThreshold = Number(twoPointThreshold);
         setRewardCriteria({
             onePointReward: updatedOnePointThreshold,
             twoPointReward: updatedTwoPointThreshold
         })
+        setChanged(true);
+        setTimeout(() => {
+            setChanged(false);
+        }, 2000);
     }
 
     const isDisabled = (rewardThreshold1, rewardThreshold2) => {
+        // if user haven't given input
+        if(rewardThreshold1 === "" || !rewardThreshold2 === "") {
+            return true
+        }
         const updatedOnePointThreshold = Number(rewardThreshold1);
         const updatedTwoPointThreshold = Number(rewardThreshold2);
         // if user entered other than number
@@ -51,7 +60,7 @@ function Configuration(props) {
             </div>
             <input type="submit" value="Submit" disabled={isDisabled(onePointThreshold, twoPointThreshold)}
               onClick={() => changeCriteria(onePointThreshold, twoPointThreshold)} />
-
+            {changed && <SuccessAlert message={`Updated!`} />}
         </form>
 
     </div>
