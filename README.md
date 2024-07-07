@@ -4,6 +4,8 @@ A retailer offers a rewards program to its customers, awarding points based on e
  
 A customer receives 2 points for every dollar spent over $100 in each transaction, plus 1 point for every dollar spent between $50 and $100 in each transaction.
 (e.g. a $120 purchase = 2x$20 + 1x$50 = 90 points).
+
+Reward points criterial can be customized in configuration screen!
  
 This project calculates rewards of customers monthly based and total, Given a record of every transaction during a three month period.
 
@@ -15,7 +17,7 @@ Live demo: https://rearmost-sleeve.000webhostapp.com/
 
 
 
-https://github.com/aditya-vardhan/rewards/assets/15606535/7bb9b8d4-49b2-4cce-9263-33a2753692b4
+
 
 
 
