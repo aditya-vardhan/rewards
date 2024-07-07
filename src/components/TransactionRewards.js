@@ -33,7 +33,7 @@ function TransactionRewards({ rewardCriteria }) {
           <td>{row.date}</td>
           <td>{row.txnId}</td>
           <td>{row.txnAmount}</td>
-          <td>{row.reward}</td>
+          <td>{Math.round(row.reward)}</td>
         </tr>
       );
     });

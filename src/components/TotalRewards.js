@@ -31,7 +31,7 @@ function TotalRewards({ rewardCriteria }) {
           <td>{row.customer_id}</td>
           <td>{row.customer_name}</td>
           <td>{row.txnAmount}</td>
-          <td>{row.reward}</td>
+          <td>{Math.round(row.reward)}</td>
         </tr>
       );
     });

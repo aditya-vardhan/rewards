@@ -32,7 +32,7 @@ function MonthlyRewards({ rewardCriteria }) {
           <td>{row.customer_name}</td>
           <td>{row.month}</td>
           <td>{row.txnAmount}</td>
-          <td>{row.reward}</td>
+          <td>{Math.round(row.reward)}</td>
         </tr>
       );
     });
