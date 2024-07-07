@@ -19,7 +19,7 @@ function Configuration(props) {
         setChanged(true);
         setTimeout(() => {
             setChanged(false);
-        }, 2000);
+        }, 1000);
     }
 
     const isDisabled = (rewardThreshold1, rewardThreshold2) => {
