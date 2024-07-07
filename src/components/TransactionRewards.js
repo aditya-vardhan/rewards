@@ -3,14 +3,15 @@ import PurchaseDataService from '../services/PurchaseDataService';
 import { getUserRewardsData, sortByName } from './RewardUtils';
 import logger from '../logger';
 
-function TransactionRewards() {
+function TransactionRewards({rewardCriteria}) {
+  const {onePointReward, twoPointReward} = rewardCriteria;
   const [rewardsData, setRewardsData] = useState([]);
   const [error, setError] = useState(null);
 
   const getPurchaseData = async () => {
     try {
       const purchaseDataResponse = await PurchaseDataService('mock');
-      const rewardsInfo = getUserRewardsData(purchaseDataResponse.result.data);
+      const rewardsInfo = getUserRewardsData(purchaseDataResponse.result.data, onePointReward, twoPointReward);
       setRewardsData(rewardsInfo);
     } catch (error) {
       logger.error(error);

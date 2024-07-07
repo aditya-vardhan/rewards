@@ -1,14 +1,14 @@
 import moment from 'moment';
 import logger from '../logger';
 
-export const getUserRewardsData = (purchaseData) => {
+export const getUserRewardsData = (purchaseData, onePointThreshold, twoPointThreshold) => {
   const rewardsData = purchaseData.reduce((acm, txn) => {
     // txn should be over 50$ to receive reward
-    if (txn.price <= 50) {
+    if (txn.price <= onePointThreshold) {
       return acm;
     }
     // if txn is above 100$ user receives 2 reward points above 50  + 1 reward point between 50 to 100$
-    const reward = txn.price > 100 ? (txn.price - 100) * 2 + 50 : txn.price - 50;
+    const reward = txn.price > twoPointThreshold ? (txn.price - twoPointThreshold) * 2 + onePointThreshold : txn.price - onePointThreshold;
 
     const validTransaction = {
       customer_id: txn.customer_id,
@@ -26,14 +26,14 @@ export const getUserRewardsData = (purchaseData) => {
   return rewardsData;
 };
 
-export const getMonthlyRewardsData = (purchaseData) => {
+export const getMonthlyRewardsData = (purchaseData, onePointThreshold, twoPointThreshold) => {
   const rewardsData = purchaseData.reduce((acm, txn) => {
     // txn should be over 50$ to receive reward
-    if (txn.price <= 50) {
+    if (txn.price <= onePointThreshold) {
       return acm;
     }
     // if txn is above 100$ user receives 2 reward points above 50  + 1 reward point between 50 to 100$
-    const reward = txn.price > 100 ? (txn.price - 100) * 2 + 50 : txn.price - 50;
+    const reward = txn.price > twoPointThreshold ? (txn.price - twoPointThreshold) * 2 + onePointThreshold : txn.price - onePointThreshold;
 
     const purchaseMonth = moment(txn.purchased_date).format('MMMM');
 
@@ -62,14 +62,14 @@ export const getMonthlyRewardsData = (purchaseData) => {
   return rewardsData;
 };
 
-export const getTotalRewardsData = (purchaseData) => {
+export const getTotalRewardsData = (purchaseData, onePointThreshold, twoPointThreshold) => {
   const rewardsData = purchaseData.reduce((acm, txn) => {
     // txn should be over 50$ to receive reward
-    if (txn.price <= 50) {
+    if (txn.price <= onePointThreshold) {
       return acm;
     }
     // if txn is above 100$ user receives 2 reward points above 50  + 1 reward point between 50 to 100$
-    const reward = txn.price > 100 ? (txn.price - 100) * 2 + 50 : txn.price - 50;
+    const reward = txn.price > twoPointThreshold ? (txn.price - twoPointThreshold) * 2 + onePointThreshold : txn.price - onePointThreshold;
 
     const totalRewardsIndex = acm.findIndex((data) => data.customer_name === txn.customer_name);
 

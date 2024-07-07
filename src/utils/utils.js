@@ -13,5 +13,10 @@ export const pages = [
     id: 'total',
     path: '/total',
     name: 'TOTAL'
+  },
+  {
+    id: 'configuration',
+    path: '/configuration',
+    name: 'CONFIGURATION'
   }
 ];
