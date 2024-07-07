@@ -3,8 +3,8 @@ import PurchaseDataService from '../services/PurchaseDataService';
 import { getUserRewardsData, sortByName } from './RewardUtils';
 import logger from '../logger';
 
-function TransactionRewards({rewardCriteria}) {
-  const {onePointReward, twoPointReward} = rewardCriteria;
+function TransactionRewards({ rewardCriteria }) {
+  const { onePointReward, twoPointReward } = rewardCriteria;
   const [rewardsData, setRewardsData] = useState([]);
   const [error, setError] = useState(null);
 

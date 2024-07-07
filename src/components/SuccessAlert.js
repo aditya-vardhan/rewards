@@ -1,5 +1,5 @@
-import './SuccessAlert.css'
+import './SuccessAlert.css';
 
-export default function SuccessAlert({message}) {
-    return <span class='success-alert'>{message}</span>
+export default function SuccessAlert({ message }) {
+  return <span className='success-alert'>{message}</span>;
 }
