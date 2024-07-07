@@ -46,8 +46,8 @@ function TotalRewards({ rewardCriteria }) {
       <h3 className='table-header total-rewards'>User total purchase rewards data</h3>
       <span className='note'>
         (Note: One point reward: {'>'}
-        {onePointReward}$, Two point reward: {'>'}
-        {twoPointReward}$)
+        {onePointReward}$ purchase, Two point reward: {'>'}
+        {twoPointReward}$ purchase)
       </span>
       <table>
         <thead>
